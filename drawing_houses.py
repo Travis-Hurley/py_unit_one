@@ -1,28 +1,36 @@
 import turtle
-turtle.speed(50)
-from turtle import *
-color('red', 'yellow')
-begin_fill()
-while True:
-    for x in range(4):
-        turtle.forward(200)
+turtle.speed(1)
+turtle.penup()
+turtle.forward(-300)
+turtle.pendown()
+
+def space_house():
+    turtle.right(120)
+    turtle.penup()
+    turtle.forward(50)
+    turtle.pendown()
+
+
+
+def make_house():
+    turtle.fillcolor('blue')
+    turtle.begin_fill()
+    for h in range(4):
+        turtle.forward(100)
         turtle.right(90)
-    if abs(pos()) < 1:
-        break
-end_fill()
+    turtle.end_fill()
 
-
-
-from turtle import *
-color('green')
-begin_fill()
-while True:
-    for r in range(3):
-        turtle.forward(200)
+    turtle.fillcolor('green')
+    turtle.begin_fill()
+    for r in range(4):
+        turtle.forward(100)
         turtle.left(120)
-    if abs(pos()) < 1:
-        break
-end_fill()
-done()
+    turtle.end_fill()
+
+
+for g in range(4):
+    make_house()
+    space_house()
+
 
 turtle.exitonclick()
