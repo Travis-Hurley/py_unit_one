@@ -2,15 +2,13 @@ import turtle
 
 turtle.speed(5)
 turtle.penup()
-turtle.forward(-100)
+turtle.forward(-300)
+
 turtle.pendown()
 
 def space_house():
     turtle.penup()
-    turtle.right(120)
-    turtle.forward(100)
-
-
+    turtle.forward(50)
     turtle.pendown()
 
 
@@ -18,18 +16,29 @@ def space_house():
 def make_house(size,house_color,roof_color):
     turtle.fillcolor(house_color)
     turtle.begin_fill()
-    for h in range(4):
-        turtle.right(90)
+    for r in range(4):
         turtle.forward(size)
+        turtle.left(90)
     turtle.end_fill()
+
+    turtle.left(90)
+    turtle.forward(size)
+    turtle.right(90)
+    turtle.forward(size)
 
     turtle.fillcolor(roof_color)
     turtle.begin_fill()
-    for r in range(4):
+    for r in range(3):
         turtle.left(120)
         turtle.forward(size)
-
     turtle.end_fill()
+    turtle.right(90)
+    turtle.forward(size)
+    turtle.left(90)
+
+
+
+
 
 
 
