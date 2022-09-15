@@ -11,8 +11,6 @@ def space_house():
     turtle.forward(50)
     turtle.pendown()
 
-
-
 def make_house(size,house_color,roof_color):
     turtle.fillcolor(house_color)
     turtle.begin_fill()
@@ -36,14 +34,6 @@ def make_house(size,house_color,roof_color):
     turtle.forward(size)
     turtle.left(90)
 
-
-
-
-
-
-
-
-
 for g in range (1):
     make_house(200,'green','cyan')
     space_house()
@@ -52,10 +42,5 @@ for g in range (1):
     make_house(75,'purple','green')
     space_house()
     make_house(100,'orange','blue')
-
-
-
-
-
 
 turtle.exitonclick()

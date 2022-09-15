@@ -1,31 +1,25 @@
 # remember to use comments!
 import turtle
-
 turtle.speed(10)
-for w in range(360):
-    turtle.forward(1)
-    turtle.left(1)
+def make_octo():
 
-for e in range(360):
-    turtle.right(1)
-    turtle.forward(1.5)
+    for f in range(6):
+        turtle.color('green')
+        turtle.forward(50)
+        turtle.right(30)
 
-for i in range(180):
-    turtle.forward(1)
-    turtle.left(1)
+def make_triangle():
+    for y in range(3):
+        turtle.right(120)
+        turtle.forward(100)
 
 
-
-turtle.forward(50)
-turtle.forward(-100)
-turtle.right(180)
-turtle.forward(25)
-turtle.left(90)
-turtle.forward(50)
-turtle.right(90)
-turtle.forward(25)
-turtle.right(90)
-turtle.forward(25)
+for y in range(12):
+    make_octo()
+    turtle.right(30)
+    make_octo()
+for j in range(12):
+    make_triangle()
 
 
 
