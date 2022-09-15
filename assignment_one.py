@@ -1,7 +1,7 @@
 # remember to use comments!
 import turtle
 
-turtle.speed(0)
+turtle.speed(10)
 for w in range(360):
     turtle.forward(1)
     turtle.left(1)
