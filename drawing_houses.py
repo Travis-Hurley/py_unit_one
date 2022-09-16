@@ -1,6 +1,6 @@
 import turtle
 
-turtle.speed(5)
+turtle.speed(10)
 turtle.penup()
 turtle.forward(-300)
 
